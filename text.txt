@@ -1,3 +1,6 @@
 Comandos para Git y GitHug
 
 -git show text.txt = esto me muestra todos los cambios que se han hecho 
+
+-git diff (números largos de un commit) (números largos de un commit) = esto nos sirve para comparar los cambios que se hicieron con el commit del numero primero con el del segundo
+
