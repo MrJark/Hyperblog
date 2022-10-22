@@ -4,7 +4,11 @@ Comandos para Git y GitHug
 
 - git diff (números largos de un commit) (números largos de un commit) = esto nos sirve para comparar los cambios que se hicieron con el commit del numero primero con el del segundo
 
-- git rm = es el código para remuve, para remover el archivo de la nuve donde está esperando ser almacinado con el commit y lo devuelves al estado de no en la nube
+- git rm = es el código para remuve, para remover el archivo de la nuve donde está esperando ser almacinado con el commit y lo devuelves al estado de no en la nube. nos ayuda a eliminar archivos de Git sin eliminar su historial del sistema de versione
+
+- git rm --cached Elimina los archivos de nuestro repositorio local y del área de staging, pero los mantiene en nuestro disco duro
+
+- git rm --force  Elimina los archivos de Git y del disco duro
 
 - git add = el archivo lo añades a un staging, una nueve donde espera para ser enviado al repositorio con el git commit -m " ". Antes de que pase esto, esta untracked
 
@@ -14,3 +18,8 @@ Comandos para Git y GitHug
     .El git reset (nº) --soft = no vuelve a la versión anterior pero sabiendo que lo que tenemos en staging se nos mantiene
     . el git reset (nº) --hard = nos devuelve todo al número anterir, incluidos los staging
 
+- esc+shift+z+z = con este comando fuerza a la salida del commit y nos permie colver a escribir
+
+- git checkout (nº) me trae la versión del número que le he puesto
+
+- git lob me muestra todos los numeros de los cambios que he hecho 
