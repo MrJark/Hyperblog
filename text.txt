@@ -1,2 +1,3 @@
-text 
-modificacion
+Comandos para Git y GitHug
+
+-git show text.txt = esto me muestra todos los cambios que se han hecho 
