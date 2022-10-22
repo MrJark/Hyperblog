@@ -70,4 +70,5 @@ Comandos para Git y GitHug
 
 - git commit -am "mensaje" es para los archivos que no parten desde cero, es decir, ya hemos hecho algún commit y no son nuevos y este comando lo que me hace es un add a la vez que inserto el commit con el mensaje
 
+- git branch nos muestra las distintas ramas que tenemos para trabajar o que hemos creado para saber cuales son y si queremos hacer un merge
 
