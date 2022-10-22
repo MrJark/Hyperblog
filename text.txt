@@ -72,3 +72,4 @@ Comandos para Git y GitHug
 
 - git brach nos muestra las distintas ramas que tenemos para trabajar o que hemos creado para saber cuales son y si queremos hacer un merge
 
+- git remote add origin (url del repositorio que queremos tener) esto nos sirve para mover un repositorio creado de github a nuestro sistema 
