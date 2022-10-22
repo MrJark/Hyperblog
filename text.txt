@@ -1,6 +1,16 @@
 Comandos para Git y GitHug
 
--git show text.txt = esto me muestra todos los cambios que se han hecho 
+- git show text.txt = esto me muestra todos los cambios que se han hecho 
 
--git diff (números largos de un commit) (números largos de un commit) = esto nos sirve para comparar los cambios que se hicieron con el commit del numero primero con el del segundo
+- git diff (números largos de un commit) (números largos de un commit) = esto nos sirve para comparar los cambios que se hicieron con el commit del numero primero con el del segundo
+
+- git rm = es el código para remuve, para remover el archivo de la nuve donde está esperando ser almacinado con el commit y lo devuelves al estado de no en la nube
+
+- git add = el archivo lo añades a un staging, una nueve donde espera para ser enviado al repositorio con el git commit -m " ". Antes de que pase esto, esta untracked
+
+- git commit -m "mensaje" = es para llegar al repositorio y guardarlo allí 
+
+- git reset (número de la versión)= nos permite volver a una versión anterior de nuestro archivo. Existe el soft y el hard.
+    .El git reset (nº) --soft = no vuelve a la versión anterior pero sabiendo que lo que tenemos en staging se nos mantiene
+    . el git reset (nº) --hard = nos devuelve todo al número anterir, incluidos los staging
 
