@@ -75,3 +75,5 @@ Comandos para Git y GitHug
 - git remote add origin (url del repositorio que queremos tener) esto nos sirve para mover un repositorio creado de github a nuestro sistema 
 
 - git pull origin main con este comando puedo traer los cambios que haya hecho en el post o donde sea del proyecto que esté trabajando a mi vs code 
+
+- git push origin main puedo mandar a github los cambios que haga en vs code, estos dos ultimos? una maranivilla
