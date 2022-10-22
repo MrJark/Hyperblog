@@ -68,4 +68,6 @@ Comandos para Git y GitHug
 
 - git pull es el combinar los dos anteriores en uno
 
+- git commit -am "mensaje" es para los archivos que no parten desde cero, es decir, ya hemos hecho algún commit y no son nuevos y este comando lo que me hace es un add a la vez que inserto el commit con el mensaje
+
 
