@@ -77,3 +77,6 @@ Comandos para Git y GitHug
 - git pull origin main con este comando puedo traer los cambios que haya hecho en el post o donde sea del proyecto que esté trabajando a mi vs code 
 
 - git push origin main puedo mandar a github los cambios que haga en vs code, estos dos ultimos? una maranivilla
+
+- git log --all --graph --decorate --oneline nos muestra todos los cambios que hemos hecho a lo largo del proyecto en una linea cada uno y mucho más compacto
+
