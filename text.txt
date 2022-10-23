@@ -102,4 +102,5 @@ Comandos para Git y GitHug
     2. vamos a la terminal y ponemos: git remote add upstream (url) esto lo hacemos para crearnos una fuente nueva distinta a origin 
     3. git remote -v para ver que esa rama upstream se ha creado correctamente
     4. git pull upstream main y esto nos hace pasarnos todos los cambios de main a la rama upstream
-    5. git commit -am " "
+    5. git commit -am "Fusión"
+
