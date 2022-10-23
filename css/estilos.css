@@ -44,3 +44,9 @@ body {
     background-color: white;
     padding: 1em;
 }
+
+#footer {
+    color: #2c2c27;
+    text-align: left;
+    padding: 0.5em;
+}
