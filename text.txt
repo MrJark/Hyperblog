@@ -95,3 +95,5 @@ Comandos para Git y GitHug
 
 + para enviar la rama que no tenemos en github pero si en local, primero tenemos que hacer un 'git pull origin main' para traer todo lo último que tenemos, después nos movemos con 'git checkout (nombre de la rama que queremos subir)' y después empujamos a git la rama que queremos con 'git push origin (nombre de la rama a empujar)'
 
++los archivos binarios no se deben guardar en el repositorio, se deben guardar a parte y para subir esto, debo cambiarme a la rama header ya que es solo para ellas y lo hago con 'git checkout header', hago un pull de la rama header, hago un 'git commit -m "añado logo"' y ya hago el push a la rama header con el logo
+
