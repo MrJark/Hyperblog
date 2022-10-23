@@ -80,3 +80,18 @@ Comandos para Git y GitHug
 
 - git log --all --graph --decorate --oneline nos muestra todos los cambios que hemos hecho a lo largo del proyecto en una linea cada uno y mucho más compacto
 
++ los aliases nos sirve para evitar codigos muy largos y cambiarlos por otros más corto, por ejepmlo, quiero cambiar el git tan largo anterior por arbolito, lo que haría seria: alias arbolito = "git log --all --graph --decorate --oneline"
+
++ los tag nos sirven para crear las distintas versiones del proyecto y saber por cual vamos y dejar la referencia en el mundo online ya que en el ofline no es necesario, estos tag se crean: git tag -a v0.1 -m "Resultado de las primeras clases del curso" (nº del hash que quieres poner como la v0.1, es ese numero largo)
+
+- git show-ref --tags me muestra a que hash pertenece cada tag y versión
+
+- git push origin --tags esto nos sirva para llevar al origin, github, los tags que tenemos y poder mostrarlos allí pero antes de hacer esto debemos hacer un "git pull origin main" para traernos todo lo que tenemos en github 
+
+- git tag -d (nombre tag a borrar) es para eliminar los tags que no quiero tener
+- git push origin :refs/tags/(nombre del tag a eliminar) este comando se usa para eliminar el tag de github de forma inmediata
+
+- gitk nos muestra de forma visual que es lo que ha pasado a la largo del proyecto
+
++ para enviar la rama que no tenemos en github pero si en local, primero tenemos que hacer un 'git pull origin main' para traer todo lo último que tenemos, después nos movemos con 'git checkout (nombre de la rama que queremos subir)' y después empujamos a git la rama que queremos con 'git push origin (nombre de la rama a empujar)'
+
