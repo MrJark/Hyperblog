@@ -97,3 +97,9 @@ Comandos para Git y GitHug
 
 +los archivos binarios no se deben guardar en el repositorio, se deben guardar a parte y para subir esto, debo cambiarme a la rama header ya que es solo para ellas y lo hago con 'git checkout header', hago un pull de la rama header, hago un 'git commit -m "añado logo"' y ya hago el push a la rama header con el logo
 
++ cuando hacermos un fork el problema es que no se actualizan de forma auto. las siguientes updates que haga el propietario de donde hemos hecho el fork. Por tanto, tenemos que hacer pull's de una forma 'constante' para mantenernos actualizados con los cambios que haga el propietario. Pero para hacerlo en la consola tenemos que: 
+    1. copiar la url del proyecto que estamos haciendo fork 
+    2. vamos a la terminal y ponemos: git remote add upstream (url) esto lo hacemos para crearnos una fuente nueva distinta a origin 
+    3. git remote -v para ver que esa rama upstream se ha creado correctamente
+    4. git pull upstream main y esto nos hace pasarnos todos los cambios de main a la rama upstream
+    5. git commit -am " "
