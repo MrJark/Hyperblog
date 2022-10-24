@@ -111,7 +111,7 @@ Comandos para Git y GitHug
  - git branch -D (nombre del branch que quiero eliminar) este comando nos elimina el branch que no queramos tener
 
 - git stash guarda el trabajo actual del Staging en una lista diseñada para ser temporal llamada Stash, para que pueda ser recuperado en el futuro
-    +podemos guardar en el stash con un mensaje como : - 'git stash save " tu mensaje " '
+    +podemos guardar en el stash con un mensaje como 'git stash save " tu mensaje " '
     +para recuperar los últimos cambios tenemos que aplicar el 'git stash pop' 
     +para crear una rama con stash 'git stash branch (nombre rama)'
     +para eliminar los elementos o cambios mas recientes del stash 'git stash drop'
@@ -125,3 +125,28 @@ Comandos para Git y GitHug
 - git reflog nos muestra TODO lo que pasó, sea lo que sea, hiciera lo que hiciera y de ahí puedo coger el último hash que estaba bien y lo copio y hago luego un 'git reset --HARD (nº del hash al que queiro volver)' y ya estaría todo solucionado.
     +el 'git reset --HARD (nº hash al que vuelvo) es para resetear TDOD (es mala practica  no ser que lo haya roto todo)
     +el 'git reset --SOFT (nº hash al que vuelvo) es para resetear todo EXCEPTO lo que esté en staging 
+
+- git commit --amed es para remendar el ultimo commit pq se me olvidó poner algo en él y para no hacer otro commit, hago:
+    1. hago los cambios en los códigos que se me hayan olvidado hacer
+    2. hago un 'git add (nombre de la carpeta o archivo que haya modificado)
+    3. uso el comando 'git commit --amed' y  me pregunta hasta si quiero cambiar el commit anterior y listo
+
+- git grep (palabra que querio encontrar) me muestra donde he usado la palabra que quiero en todo mi archivo. Tenemos que llevar cuidado en que rama estamos buscando 
+    + git grep -n (nombre de la palabra que quiero buscar) esto me muestra exactamente een que lineas tengo esa palabra
+    + git grep -c (nombre palabra) me cuenta las veces que he usado la palabra que estoy buscando
+
+- git log -S "(nombre de lo que quiero buscar)" esto me busca algo que no esté en el código sino en los commits 
+
+- git blame (nombre del archivo) nos sirve para saber quien hzo que en el proyecto 
+    + git blame -c (nombre del archivo) me miestra lo mismo que sin el '-c' pero de una manera mejor identada
+    + git blame (nombre del archico o nombre-carpeta/nombre-archivo) -L(nºlinea que queiro empezar),(nº linea en la que queiro acabar) esto me muestra que persona modificó o creó en ese archovi ese rango de lineas 
+    + git blame (nombre del archico o nombre-carpeta/nombre-archivo) -L(nºlinea que queiro empezar),(nº linea en la que queiro acabar) -c nos muestra lo mismo que el anterior pero con un mejor formato
+
+** comandos para ver cuantos commits ha hehco un miembro del equipo
+    - git shortlog -sn me muestra las personas que han hecho ciertos commits (no muestra los borrados)
+    - git shortlog -sn --all me muestra las personas que han hecho ciertos commits incluso los borrados
+    - git shortlog -sn --all --no-merge me muestra las personas que han hecho ciertos commits incluso los borrados pero sin los merges ya que estos son "trampa"
+        +si yo quiero nombrar este git anterior tan largo y hacerlo mas sencillo y que sea a traves del comando 'git stats' lo qu etengo que hacer es: 'git config --global alias.stats "comando que queiro meterle el alias, que en este caso es git shortlog -sn --all --no-merge"
+
+- git branch -r podemos ver las ramas remotas que tenemos y con 'git branch' las locales 
+- git branch -a vemos todas las ramas, las locales y las remotas 
