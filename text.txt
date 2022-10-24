@@ -110,3 +110,18 @@ Comandos para Git y GitHug
 
  - git branch -D (nombre del branch que quiero eliminar) este comando nos elimina el branch que no queramos tener
 
+- git stash guarda el trabajo actual del Staging en una lista diseñada para ser temporal llamada Stash, para que pueda ser recuperado en el futuro
+    +podemos guardar en el stash con un mensaje como : - 'git stash save " tu mensaje " '
+    +para recuperar los últimos cambios tenemos que aplicar el 'git stash pop' 
+    +para crear una rama con stash 'git stash branch (nombre rama)'
+    +para eliminar los elementos o cambios mas recientes del stash 'git stash drop'
+    +para eliminar todos los elementos del stash 'git stash clear'
+
+- git clean --dry-run este comando me muestra que va a eliminar por si hemos hecho algunas copias que no queremos o algo que no deberiamos tener y es git quien sabe esto y que deberia borrar
+- git f me elimina directamente sin decirme nada
+
+- git cherry-pick (es una mala practica y deberiamos hacerlo con un merge o un checkout) me permite tomar uno o carios commits de otras ramas sin tener que hacer un merge completo con tan solo copiar el hash 
+
+- git reflog nos muestra TODO lo que pasó, sea lo que sea, hiciera lo que hiciera y de ahí puedo coger el último hash que estaba bien y lo copio y hago luego un 'git reset --HARD (nº del hash al que queiro volver)' y ya estaría todo solucionado.
+    +el 'git reset --HARD (nº hash al que vuelvo) es para resetear TDOD (es mala practica  no ser que lo haya roto todo)
+    +el 'git reset --SOFT (nº hash al que vuelvo) es para resetear todo EXCEPTO lo que esté en staging 
