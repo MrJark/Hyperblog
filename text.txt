@@ -106,4 +106,4 @@ Comandos para Git y GitHug
 
 + el readme.md está hecho en la página https://pandao.github.io/editor.md/en.html
 
-+ "rebase" es el proceso de mover o combinar una secuencia de confirmaciones en una nueva confirmación base. Y esto hacerlo en un repositorio online es una MUY MALA práctica. Solo se debería hacer para repositorios locales para arreglar los bugs
++ "rebase" es el proceso de mover o combinar una secuencia de confirmaciones en una nueva confirmación base. Y esto hacerlo en un repositorio online es una MUY MALA práctica. Solo se debería hacer para repositorios locales para arreglar los bugs. Para ello tenemos  que crear un branch para esa nueva rama, y para fusionarla y que se pegue a la rama main y desaparezca este 'experimento' tenemos que meternos en la rama experimento  con 'git checkout (nombre rama experimento)', y dentro de este rama ponemos el comando 'git rebase (nombre de la rama original que tenemos en el repositorio, en este caso main)'
