@@ -105,3 +105,5 @@ Comandos para Git y GitHug
     5. git commit -am "Fusión"
 
 + el readme.md está hecho en la página https://pandao.github.io/editor.md/en.html
+
++ "rebase" es el proceso de mover o combinar una secuencia de confirmaciones en una nueva confirmación base. Y esto hacerlo en un repositorio online es una MUY MALA práctica. Solo se debería hacer para repositorios locales para arreglar los bugs
