@@ -104,4 +104,4 @@ Comandos para Git y GitHug
     4. git pull upstream main y esto nos hace pasarnos todos los cambios de main a la rama upstream
     5. git commit -am "Fusión"
 
-- 
++ el readme.md está hecho en la página https://pandao.github.io/editor.md/en.html
